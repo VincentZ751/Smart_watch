@@ -1,31 +1,41 @@
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
-
-# Temporary files
+### KiCad ###
+# Temporary files and caches
 *.000
 *.bak
 *.bck
-*.kicad_pcb-bak
-*.kicad_sch-bak
-*-backups
-*.kicad_prl
-*.sch-bak
+*.tmp
 *~
 _autosave-*
-*.tmp
-*-save.pro
-*-save.kicad_pcb
+*.lck
 fp-info-cache
-~*.lck
-\#auto_saved_files#
 
-# Netlist files (exported from Eeschema)
+# Local user settings
+*.kicad_prl
+
+# KiCad Backups
+*-backups/
+**/*-backups/*.zip
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*.kicad_sym-bak
+*.kicad_mod-bak
+
+# KiCad 9.0+ Local Git History (Important!)
+.history/
+
+# Fabrication outputs — regenerate from source, don't need to be tracked
+plot/
+gerbers/
+*.pos
+*.drl
+*.gbr
+*.gbrjob
+
+# Netlists and Autorouter files
 *.net
-
-# Autorouter files (exported from Pcbnew)
 *.dsn
 *.ses
 
-# Exported BOM files
-*.xml
-*.csv
+### OS junk ###
+.DS_Store
+Thumbs.db
