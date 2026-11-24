@@ -427,19 +427,28 @@
         "filename": "Smart_watch.kicad_sch",
         "name": "",
         "uuid": "abc55799-5433-4f0c-aa91-5ea0cca95951"
+      },
+      {
+        "filename": "breakout_boards.kicad_sch",
+        "name": "Breakout_boards",
+        "uuid": "885604c5-a615-4a4a-a916-c5baf4041e40"
       }
     ],
-    "used_designators": "#FLG1-3,R1-2,J1,D1,#PWR1-12,U1-4,LCD1",
+    "used_designators": "J1,R1-2,#FLG1-3,#PWR1-12,D1,U1-4,LCD1",
     "variants": []
   },
   "sheets": [
     [
-      "abc55799-5433-4f0c-aa91-5ea0cca95951",
-      ""
+      "885604c5-a615-4a4a-a916-c5baf4041e40",
+      "Breakout_boards"
     ],
     [
       "dad86b3e-e9a1-44e2-9076-5594d0de2f9c",
       "Breakout boards"
+    ],
+    [
+      "abc55799-5433-4f0c-aa91-5ea0cca95951",
+      ""
     ]
   ],
   "text_variables": {},
