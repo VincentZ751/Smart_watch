@@ -11,6 +11,7 @@
 #include "imu_bno055.h"
 #include "ir_transceiver.h"
 #include "watch_apps.h"
+#include "ble_time_sync.h"
 
 static const char *TAG = "WATCH_MAIN";
 
@@ -94,7 +95,10 @@ void app_main(void)
     }
 
     ESP_ERROR_CHECK(ir_init(PIN_IR_TX, PIN_IR_RX));
+    ESP_ERROR_CHECK(ble_time_sync_init());
 
+    app_mgr_init(go_to_sleep);
+    
     // Launch 2-button Carousel UI & pass sleep callback
     app_mgr_init(go_to_sleep);
 

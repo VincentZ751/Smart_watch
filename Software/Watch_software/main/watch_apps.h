@@ -5,10 +5,6 @@
 #include "buttons.h"
 #include "imu_bno055.h"
 
-// Map 2-button layout onto existing button IDs
-#define BTN_LEFT    BTN_SELECT  // GPIO1 (LP GPIO -> wakes from Deep Sleep)
-#define BTN_RIGHT   BTN_DOWN    // Swap to BTN_UP if you prefer the other button
-
 typedef void (*sleep_request_cb_t)(const char *reason);
 
 typedef struct {
